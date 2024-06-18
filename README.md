@@ -13,6 +13,8 @@
   - Password: ******
   - Click on Save button
 - Click on Server1
-  - Click on create
-  - Click on database (note: you can create database)
+  - to show all localhost database
+- Right click on server1
+  - Click on Create
+  - Click on Database (note: you can create database)
    
