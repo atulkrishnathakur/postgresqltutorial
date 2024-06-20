@@ -36,3 +36,14 @@
 - Right click on postgrerds
   - Click on Create
   - Click on Database (note: you can create database)
+
+# Export database from pgadmin4
+- Launch the pgAdmin4
+- Connect your PostgreSQL server
+- Expand the server to locate the database that you want to export
+- Right click on the database name
+- Click on Backup
+- Select General tab
+  - Filename: Enter file path like /home/atul/myaws/fastapi_test_aws/fprofile2.sql
+  - Format: plan
+  - Click on Backup button
