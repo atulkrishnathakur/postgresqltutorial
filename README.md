@@ -39,28 +39,28 @@
 
 # Export full postgresql database
 - use the pg_dump command
-- command: $ pg_dump -U [username] --column-inserts [database_name] > /path/dir/filename.sql
+- command: $ pg_dump -h [hostname/endpoint] -p [port] -U [username] --column-inserts [database_name] > /path/dir/filename.sql
 
   ```
-  atul@atul-Lenovo-G570:~$ pg_dump -U postgres --column-inserts fprofile_db > mydb/mydatasql.sql
+  atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --column-inserts fprofile_db > mydb/mydatasql.sql
 
   ```
 # Export only data of postgressql database
 
 ```
-atul@atul-Lenovo-G570:~$ pg_dump -U postgres --data-only --column-inserts fprofile_db > mydb/mydatasql1.sql
+atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --data-only --column-inserts fprofile_db > mydb/mydatasql1.sql
 
 ```
 
 # Export single table of postgresql database
-- command: $ pg_dump -U [username] --table [tablename] --column-inserts [database_name] > /path/dir/filename.sql
+- command: $ pg_dump -h [hostname/endpoint] -p [port] -U [username] --table [tablename] --column-inserts [database_name] > /path/dir/filename.sql
   ```
-   atul@atul-Lenovo-G570:~$ pg_dump -U postgres --table users --column-inserts fprofile_db > mydb/user.sql
+   atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --table users --column-inserts fprofile_db > mydb/user.sql
   
   ```
 # Export only data of single table of postgresql database
 
   ```
-   atul@atul-Lenovo-G570:~$ pg_dump -U postgres --table users --data-only --column-inserts fprofile_db > mydb/users1.sql
+   atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --table users --data-only --column-inserts fprofile_db > mydb/users1.sql
 
   ```
