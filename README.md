@@ -64,3 +64,11 @@ atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --data-only --
    atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --table users --data-only --column-inserts fprofile_db > mydb/users1.sql
 
   ```
+# Import database
+
+command: $ psql -h [hostname/endpoint] -p [port]  -U [username] [databasename] -f /path/dir/filename.sql
+
+```
+atul@atul-Lenovo-G570:~$ psql -h localhost -p 5432  -U postgres fprofile_test1 -f mydb/mydatasql.sql
+
+```
