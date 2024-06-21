@@ -37,12 +37,18 @@
   - Click on Create
   - Click on Database (note: you can create database)
 
-# Export postgresql database
+# Export full postgresql database
 - use the pg_dump command
-- command: $ pg_dump -U postgres --column-inserts [database_name] > /path/dir/filename.sql
+- command: $ pg_dump -U [username] --column-inserts [database_name] > /path/dir/filename.sql
 
   ```
   atul@atul-Lenovo-G570:~$ pg_dump -U postgres --column-inserts fprofile_db > mydb/mydatasql.sql
 
   ```
 
+# Export single table of postgresql database
+- command: $ pg_dump -U [username] --table [tablename] --column-inserts [database_name] > /path/dir/filename.sql
+  ```
+   atul@atul-Lenovo-G570:~$ pg_dump -U postgres --table users --column-inserts fprofile_db > mydb/user.sql
+  
+  ```
