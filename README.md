@@ -72,3 +72,8 @@ command: $ psql -h [hostname/endpoint] -p [port]  -U [username] [databasename] -
 atul@atul-Lenovo-G570:~$ psql -h localhost -p 5432  -U postgres fprofile_test1 -f mydb/mydatasql.sql
 
 ```
+# Schema in database
+reference: https://neon.tech/postgresql/postgresql-administration/postgresql-schema
+1. In PostgreSQL, a schema is a named collection of database objects, including tables, views, indexes, data types, functions, stored procedures, and operators.
+2. A database may contain one or more schemas. However, a schema belongs to only one database. Additionally, two schemas can have different objects that share the same name. For example, you may have sales schema that has staff table and the public schema which also has the staff table.
+
