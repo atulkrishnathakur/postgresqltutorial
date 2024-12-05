@@ -1,4 +1,4 @@
-# Connect pgadmin4 with postgresql for localhost
+## Connect pgadmin4 with postgresql for localhost
 - install pgadmin4
 - Right click on Severs
 - Click on Register
@@ -18,7 +18,7 @@
   - Click on Create
   - Click on Database (note: you can create database)
    
-# Connect pgadmin4 with postgresql for AWS RDS
+## Connect pgadmin4 with postgresql for AWS RDS
 - Right click on Severs
 - Click on Register
 - Click on Server
@@ -37,7 +37,7 @@
   - Click on Create
   - Click on Database (note: you can create database)
 
-# Export full postgresql database
+## Export full postgresql database
 - use the pg_dump command
 - command: $ pg_dump -h [hostname/endpoint] -p [port] -U [username] --column-inserts [database_name] > /path/dir/filename.sql
 
@@ -45,26 +45,26 @@
   atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --column-inserts fprofile_db > mydb/mydatasql.sql
 
   ```
-# Export only data of postgressql database
+## Export only data of postgressql database
 
 ```
 atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --data-only --column-inserts fprofile_db > mydb/mydatasql1.sql
 
 ```
 
-# Export single table of postgresql database
+## Export single table of postgresql database
 - command: $ pg_dump -h [hostname/endpoint] -p [port] -U [username] --table [tablename] --column-inserts [database_name] > /path/dir/filename.sql
   ```
    atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --table users --column-inserts fprofile_db > mydb/user.sql
   
   ```
-# Export only data of single table of postgresql database
+## Export only data of single table of postgresql database
 
   ```
    atul@atul-Lenovo-G570:~$ pg_dump -h localhost -p 5432 -U postgres --table users --data-only --column-inserts fprofile_db > mydb/users1.sql
 
   ```
-# Import database
+## Import database
 
 command: $ psql -h [hostname/endpoint] -p [port]  -U [username] [databasename] -f /path/dir/filename.sql
 
@@ -72,9 +72,10 @@ command: $ psql -h [hostname/endpoint] -p [port]  -U [username] [databasename] -
 atul@atul-Lenovo-G570:~$ psql -h localhost -p 5432  -U postgres fprofile_test1 -f mydb/mydatasql.sql
 
 ```
-# Schema in database
+## Schema in database
 reference: https://neon.tech/postgresql/postgresql-administration/postgresql-schema
 1. In PostgreSQL, a schema is a named collection of database objects, including tables, views, indexes, data types, functions, stored procedures, and operators.
 2. A database may contain one or more schemas. However, a schema belongs to only one database. Additionally, two schemas can have different objects that share the same name. For example, you may have sales schema that has staff table and the public schema which also has the staff table.
 3. PostgreSQL automatically creates a schema called public for every new database.
+
 
