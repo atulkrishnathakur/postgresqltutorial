@@ -88,5 +88,5 @@ Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
     - Format: choose plan
     - Encoding: UTF-8
     - Role Name: postgres
-  - Objects: From this tabl you can export some specific tables
+  - Objects: From this tab you can export some specific tables
 - Click on Backup button
