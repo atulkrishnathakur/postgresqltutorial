@@ -79,6 +79,7 @@ reference: https://neon.tech/postgresql/postgresql-administration/postgresql-sch
 3. PostgreSQL automatically creates a schema called public for every new database.
 
 ## How to export postgresql database from pgadmin-4
+Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
 - open your pgadmin-4
 - Right click on database
 - Click on Backup
@@ -86,4 +87,6 @@ reference: https://neon.tech/postgresql/postgresql-administration/postgresql-sch
     - File: enter file path like `/home/atul/mydb/mydb.sql`
     - Format: choose plan
     - Encoding: UTF-8
+    - Role Name: postgres
+  - Objects: From this tabl you can export some specific tables
 - Click on Backup button
