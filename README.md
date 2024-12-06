@@ -90,3 +90,15 @@ Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
     - Role Name: postgres
   - Objects: From this tab you can export some specific tables
 - Click on Backup button
+
+## How to import postgresql database from directory in pgadmin-4
+- open pgdadmin-4
+- Right click on Databases in Server and create your database
+- Right click on created database
+- Click on Restore
+- General:
+  - Format: Directory
+  - File name: choose here directory where database tables save example "/home/atul/mydb
+  - Role name: postgres
+  - Click on Restore button
+- Right click on created database and refresh it
