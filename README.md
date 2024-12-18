@@ -102,3 +102,20 @@ Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
   - Role name: postgres
   - Click on Restore button
 - Right click on created database and refresh it
+
+## How to check sequences of postgresql in pgadmin-4
+- open pgadmin-4
+- open database
+- open schemas 
+  - open public schema
+  - Open Sequences
+
+1. when you isert and you found an error then how to solve it.
+   ```
+   ERROR: Key (id)=(1) already exists.duplicate key value violates unique constraint "test_pkey"
+   ```
+2. open sequences
+3. right click on `test_id_seq`
+4. click on properties
+5. go to Definition tab
+   - Current Value: set here max value and click on save. Example if test table id field max value is 5 then here set 5 in current Value.
