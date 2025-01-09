@@ -119,3 +119,9 @@ Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
 4. click on properties
 5. go to Definition tab
    - Current Value: set here max value and click on save. Example if test table id field max value is 5 then here set 5 in current Value.
+
+
+## How to truncate table and restart sequence
+```
+TRUNCATE TABLE table_name RESTART IDENTITY;
+```
