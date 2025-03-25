@@ -143,7 +143,7 @@ atul@atul-Lenovo-G570:~$ sudo systemctl disable postgresql
 
 ```
 
-## How to delete pgadmin4
+## How to uninstall pgadmin4
 ```
 atul@atul-Lenovo-G570:~$ sudo apt remove --purge pgadmin4
 
