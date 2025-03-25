@@ -136,3 +136,9 @@ atul@atul-Lenovo-G570:~$ sudo systemctl status postgresql
 atul@atul-Lenovo-G570:~$ sudo systemctl stop postgresql
 
 ```
+## How to disable postgresql
+- Postgresql permanently stoped. If you reboot system then postgresql can not active again
+```
+atul@atul-Lenovo-G570:~$ sudo systemctl disable postgresql
+
+```
