@@ -125,3 +125,8 @@ Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
 ```
 TRUNCATE TABLE table_name RESTART IDENTITY;
 ```
+## How to check postgresql is active or not
+```
+atul@atul-Lenovo-G570:~$ sudo systemctl status postgresql
+
+```
