@@ -130,3 +130,9 @@ TRUNCATE TABLE table_name RESTART IDENTITY;
 atul@atul-Lenovo-G570:~$ sudo systemctl status postgresql
 
 ```
+## How to stop postgresql
+- If system reboot then postgresql will be again active
+```
+atul@atul-Lenovo-G570:~$ sudo systemctl stop postgresql
+
+```
