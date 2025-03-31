@@ -195,6 +195,15 @@ softbookdb=# \dt
 ```
 softbookdb=# \dt public.*
 ```
+4. How to see table structure. command `\d <table name>`
+   ```
+   softbookdb=# \d emp_m
+   ```
+5. How to see table structure in detale. command `\d+ emp_m` and press `q` from keyboard to exit 
+   ```
+   softbookdb=# \d+ emp_m
+   ```
+
 
 ## how to quite or logout from postgresql database
 ```
