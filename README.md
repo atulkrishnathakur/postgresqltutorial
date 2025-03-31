@@ -171,5 +171,14 @@ atul@atul-Lenovo-G570:~$ systemctl status postgresql
    ```
 4. check the status again
 
-   
-``
+
+## login in postgressql by command line
+1. Run the command
+```
+atul@atul-Lenovo-G570:~$ psql -U postgres
+
+```
+2. see database list
+   ```
+   postgres=# \l
+   ```
