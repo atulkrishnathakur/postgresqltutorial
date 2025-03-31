@@ -153,3 +153,23 @@ atul@atul-Lenovo-G570:~$ sudo apt remove --purge pgadmin4
 atul@atul-Lenovo-G570:~$ sudo apt autoremove
 
 ```
+
+## How to enable postgresql if disabled
+1. check status first
+```
+atul@atul-Lenovo-G570:~$ systemctl status postgresql
+```
+
+2. enable the postgresql
+   ```
+   atul@atul-Lenovo-G570:~$ sudo systemctl enable postgresql
+   ```
+3. start the postgresql
+   ```
+   atul@atul-Lenovo-G570:~$ sudo systemctl start postgresql
+
+   ```
+4. check the status again
+
+   
+``
