@@ -183,9 +183,17 @@ atul@atul-Lenovo-G570:~$ psql -U postgres
    postgres=# \l
    ```
 ## how to go into database
+1. command `\c <database name>`
 ```
 postgres=# \c softbookdb
-
+```
+2. see database tables
+```
+softbookdb=# \dt
+```
+3. see database table of specific schema. command `\dt public.*`
+```
+softbookdb=# \dt public.*
 ```
 
 ## how to quite or logout from postgresql database
