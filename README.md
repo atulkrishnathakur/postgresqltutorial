@@ -187,3 +187,9 @@ atul@atul-Lenovo-G570:~$ psql -U postgres
 postgres=# \c softbookdb
 
 ```
+
+## how to quite or logout from postgresql database
+```
+softbookdb=# \q
+
+```
