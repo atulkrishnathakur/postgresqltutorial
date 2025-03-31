@@ -182,3 +182,8 @@ atul@atul-Lenovo-G570:~$ psql -U postgres
    ```
    postgres=# \l
    ```
+## how to go into database
+```
+postgres=# \c softbookdb
+
+```
