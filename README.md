@@ -1,3 +1,6 @@
+## How to install pgadmin4
+1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
+
 ## Connect pgadmin4 with postgresql for localhost
 - install pgadmin4
 - Right click on Severs
