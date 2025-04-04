@@ -4,6 +4,40 @@ command: `atul@atul-Lenovo-G570:~$ sudo apt install postgresql-<version>`
 atul@atul-Lenovo-G570:~$ sudo apt install postgresql-17
 ```
 
+## how to set password for postgres
+1. run below command
+```
+atul@atul-Lenovo-G570:~$ sudo -u postgres psql
+```
+2. set password
+```
+ALTER USER postgres PASSWORD '1****1';
+``
+3. Open the `/etc/postgresql/<version>/main/pg_hba.conf` file
+```
+atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
+```
+4. Look lines like `local all postgres peer`. Replace peer with md5 or scram-sha-256, like this `local all postgres md5`
+```
+# Database administrative login by Unix domain socket
+local   all             postgres                                md5
+
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# "local" is for Unix domain socket connections only
+local   all             all                                     md5
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            scram-sha-256
+# IPv6 local connections:
+host    all             all             ::1/128                 scram-sha-256
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local   replication     all                                     md5
+host    replication     all             127.0.0.1/32            scram-sha-256
+host    replication     all             ::1/128                 scram-sha-256
+```
+5. Now postgre will ask password for login
+
 ## How to install pgadmin4
 1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
 
