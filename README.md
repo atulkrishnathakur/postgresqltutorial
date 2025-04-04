@@ -1,3 +1,9 @@
+## How to install postgresql specific version
+command: `atul@atul-Lenovo-G570:~$ sudo apt install postgresql-<version>`
+```
+atul@atul-Lenovo-G570:~$ sudo apt install postgresql-17
+```
+
 ## How to install pgadmin4
 1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
 
