@@ -12,7 +12,7 @@ atul@atul-Lenovo-G570:~$ sudo -u postgres psql
 2. set password
 ```
 ALTER USER postgres PASSWORD '1****1';
-``
+```
 3. Open the `/etc/postgresql/<version>/main/pg_hba.conf` file
 ```
 atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
