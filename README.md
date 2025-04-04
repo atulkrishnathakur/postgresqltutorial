@@ -18,23 +18,29 @@ ALTER USER postgres PASSWORD '1****1';
 atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
 ```
 4. Look lines like `local all postgres peer`. Replace peer with md5 or scram-sha-256, like this `local all postgres md5`
+
+  ```
+  # Database administrative login by Unix domain socket
+  local   all             postgres                                md5
+  
+  # TYPE  DATABASE        USER            ADDRESS                 METHOD
+  
+  # "local" is for Unix domain socket connections only
+  local   all             all                                     md5
+  # IPv4 local connections:
+  host    all             all             127.0.0.1/32            scram-sha-256
+  # IPv6 local connections:
+  host    all             all             ::1/128                 scram-sha-256
+  # Allow replication connections from localhost, by a user with the
+  # replication privilege.
+  local   replication     all                                     md5
+  host    replication     all             127.0.0.1/32            scram-sha-256
+  host    replication     all             ::1/128                 scram-sha-256
+
 ```
-# Database administrative login by Unix domain socket
-local   all             postgres                                md5
-
-# TYPE  DATABASE        USER            ADDRESS                 METHOD
-
-# "local" is for Unix domain socket connections only
-local   all             all                                     md5
-# IPv4 local connections:
-host    all             all             127.0.0.1/32            scram-sha-256
-# IPv6 local connections:
-host    all             all             ::1/128                 scram-sha-256
-# Allow replication connections from localhost, by a user with the
-# replication privilege.
-local   replication     all                                     md5
-host    replication     all             127.0.0.1/32            scram-sha-256
-host    replication     all             ::1/128                 scram-sha-256
+6. restart postgresql
+```
+  sudo systemctl restart postgresql
 ```
 5. Now postgre will ask password for login
 
