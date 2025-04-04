@@ -48,6 +48,7 @@ atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
 1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
 
 ## Connect pgadmin4 with postgresql for localhost
+- First set password in postgresql if not set
 - install pgadmin4
 - Right click on Severs
 - Click on Register
