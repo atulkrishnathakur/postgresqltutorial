@@ -44,6 +44,20 @@ atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
 ```
 5. Now postgre will ask password for login
 
+## How to install `postgresql-client`
+1. It should install for database `Backup` and `Restore`
+   ```
+    atul@atul-Lenovo-G570:~$ sudo apt install postgresql-client
+   ```
+2. check version of `pg_restore`
+   ```
+   atul@atul-Lenovo-G570:~$ pg_restore --version
+   ```
+3. check version of `pg_dump`
+   ```
+    atul@atul-Lenovo-G570:~$ pg_dump --version
+   ```
+
 ## How to install pgadmin4
 1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
 
