@@ -60,6 +60,7 @@ atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
 
 ## How to install pgadmin4
 1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
+- If you install pgadmin4 by command then preference will be set automatically
 ## How to set Admin account in pgadmin4 for web
 1. If you do not know user email and password then run below command to remove `pgadmin4.db`
    ```
