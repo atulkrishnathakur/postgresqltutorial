@@ -178,6 +178,13 @@ Reference: https://www.pgadmin.org/docs/pgadmin4/8.13/backup_dialog.html
   - Click on Restore button
 - Right click on created database and refresh it
 
+## How to import postgresql database from Query Tool of pgadmin4
+- Open pgadmin4
+- Right click on created database
+- Click on query tool
+- Click on open file button in query tool window
+- Click on Exicute Script button
+
 ## How to check sequences of postgresql in pgadmin-4
 - open pgadmin-4
 - open database
