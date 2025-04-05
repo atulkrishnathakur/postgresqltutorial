@@ -60,6 +60,16 @@ atul@atul-Lenovo-G570:~$ sudo gedit /etc/postgresql/17/main/pg_hba.conf
 
 ## How to install pgadmin4
 1. Reference: https://www.pgadmin.org/download/pgadmin-4-apt/
+## How to set Admin account in pgadmin4 for web
+1. If you do not know user email and password then run below command to remove `pgadmin4.db`
+   ```
+    atul@atul-Lenovo-G570:~$ sudo rm /var/lib/pgadmin/pgadmin4.db
+   ```
+2. Run below command to reset admin account. You can set email and password.
+   ```
+     atul@atul-Lenovo-G570:~$ sudo /usr/pgadmin4/bin/setup-web.sh
+   ```
+3. Now open `http://localhost/pgadmin4`
 
 ## Connect pgadmin4 with postgresql for localhost
 - First set password in postgresql if not set
