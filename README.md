@@ -1,3 +1,6 @@
+## How to download
+1. https://www.postgresql.org/download/
+
 ## How to install postgresql specific version
 command: `atul@atul-Lenovo-G570:~$ sudo apt install postgresql-<version>`
 ```
